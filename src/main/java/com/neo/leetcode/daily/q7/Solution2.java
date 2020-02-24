@@ -1,4 +1,4 @@
-package com.neo.leetcode.q7;
+package com.neo.leetcode.daily.q7;
 
 public class Solution2 {
 

@@ -1,4 +1,4 @@
-package com.neo.leetcode.q15;
+package com.neo.leetcode.daily.q15;
 
 import java.util.ArrayList;
 import java.util.List;

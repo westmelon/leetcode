@@ -1,4 +1,4 @@
-package com.neo.leetcode.q4;
+package com.neo.leetcode.daily.q4;
 
 public class NeoStack<T> {
     private final int DEFAULT_STACK_SIZE = 8;

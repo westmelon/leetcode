@@ -1,4 +1,4 @@
-package com.neo.leetcode.q1;
+package com.neo.leetcode.daily.q1;
 
 import java.util.HashMap;
 import java.util.Map;

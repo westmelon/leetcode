@@ -1,8 +1,6 @@
-package com.neo.leetcode.q7;
+package com.neo.leetcode.daily.q7;
 
-import com.neo.leetcode.q4.NeoStack;
-
-import java.util.Stack;
+import com.neo.leetcode.daily.q4.NeoStack;
 
 /*
  * @Description: 笨比办法

@@ -1,4 +1,4 @@
-package com.neo.leetcode.q3;
+package com.neo.leetcode.daily.q3;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.neo.leetcode.q2;
+package com.neo.leetcode.daily.q2;
 
 public class App {
 
