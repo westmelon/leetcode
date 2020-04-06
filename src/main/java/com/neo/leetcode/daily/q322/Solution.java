@@ -3,10 +3,13 @@ package com.neo.leetcode.daily.q322;
 public class Solution {
 
     //求能组成金额的最少硬币数量
+    
+    
     public int coinChange(int[] coins, int amount) {
         //自顶而下的动态规划法，求所有子问题的最优解  最后合并成问题的最优解
-        if(amount<1)
+        if (amount < 1) {
             return 0;
+        }
         return coinChange(coins, amount, new int[amount]);
     }
 
@@ -18,15 +21,27 @@ public class Solution {
      * @return  int
      * @Date  2020/3/10
      */
+
+    /**
+     * @Description:
+     * @Author Neo Lin
+     * @param  [coins, remain, count]
+     * @return  int
+     * @Date  2020/4/3
+     */
     private int coinChange(int[] coins, int remain, int[] count) {
-
-        if (remain < 0)  //没有搜索到最优解
+        //没有搜索到最优解
+        if (remain < 0) {
             return -1;
-        if (remain == 0) //没有余额则不用计算
+        }
+        //没有余额则不用计算
+        if (remain == 0) {
             return 0;
-        if (count[remain - 1] != 0) //该最优解已经计算过 直接返回
+        }
+        //该最优解已经计算过 直接返回
+        if (count[remain - 1] != 0) {
             return count[remain - 1];
-
+        }
         int min = Integer.MAX_VALUE;
         //
         for (int coin : coins) {
@@ -34,7 +49,7 @@ public class Solution {
             if (answer >= 0 && answer < min) {
 
                 min = answer + 1;
-                System.out.println(String.format("当前余额%s,面值%s,最小硬币数%s",remain,coin,min));
+                System.out.println(String.format("当前余额%s,面值%s,最小硬币数%s", remain, coin, min));
             }
 
         }

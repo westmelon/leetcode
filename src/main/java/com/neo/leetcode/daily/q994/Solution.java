@@ -12,15 +12,19 @@ public class Solution {
         int[] genRow = {0, -1, 0, 1};
         int[] genCol = {-1, 0, 1, 0};
 
-        int colLength = grid[0].length; //列数
-        int rowLength = grid.length;  //行数
+        //列数
+        int colLength = grid[0].length;
+        //行数
+        int rowLength = grid.length;
 
         Queue<Integer> queue = new ArrayDeque<>();
-        Map<Integer, Integer> depth = new HashMap<>();//记录节点深度
+        //记录节点深度
+        Map<Integer, Integer> depth = new HashMap<>(16);
         //首先将所有的烂橘子入队
         for (int r = 0; r < rowLength; r++) {
             for (int c = 0; c < colLength; c++) {
-                if (grid[r][c] == 2) { //烂橘子
+                //烂橘子
+                if (grid[r][c] == 2) {
                     Integer code = r * colLength + c;
                     queue.add(code);
                     depth.put(code, 0);
