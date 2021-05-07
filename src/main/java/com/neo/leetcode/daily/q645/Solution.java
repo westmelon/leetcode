@@ -10,10 +10,7 @@ class Solution {
         //1.计算正确的合计值
         //2.计算非正确的合计值
         //3.找到重复的那个元素
-
         int length = nums.length;
-        int start = 1;
-        int end = length;
         int right = (1 + length) * length / 2;
         int[] result = new int[2];
         //数字是否出现
